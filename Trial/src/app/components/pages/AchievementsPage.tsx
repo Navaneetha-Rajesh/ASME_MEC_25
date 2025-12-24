@@ -171,40 +171,7 @@ export function AchievementsPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="px-6 mt-24">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="bg-gradient-to-br from-[#1C2C45] to-[#1C2C45]/80 rounded-3xl p-12"
-          >
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <Trophy className="w-12 h-12 text-[#83cf90] mx-auto mb-4" />
-                <div className="text-4xl text-white mb-2">15+</div>
-                <div className="text-white/70">National Awards</div>
-              </div>
-              <div>
-                <Award className="w-12 h-12 text-[#01A5A7] mx-auto mb-4" />
-                <div className="text-4xl text-white mb-2">25+</div>
-                <div className="text-white/70">Recognitions</div>
-              </div>
-              <div>
-                <Medal className="w-12 h-12 text-[#E83CF9] mx-auto mb-4" />
-                <div className="text-4xl text-white mb-2">10+</div>
-                <div className="text-white/70">Competition Wins</div>
-              </div>
-              <div>
-                <Star className="w-12 h-12 text-[#83cf90] mx-auto mb-4" />
-                <div className="text-4xl text-white mb-2">500+</div>
-                <div className="text-white/70">Participants</div>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      
     </div>
   );
 }

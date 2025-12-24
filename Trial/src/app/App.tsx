@@ -58,7 +58,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <Footer />
+      <Footer setActivePage={setActivePage} />
     </div>
   );
 }

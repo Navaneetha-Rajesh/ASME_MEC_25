@@ -1,8 +1,20 @@
 import { motion } from 'motion/react';
 import { MapPin, ExternalLink, Mail, Phone } from 'lucide-react';
 
-export function Footer() {
-  const quickLinks = ['Home', 'About', 'Meet the SLT', 'Achievements', 'Events', 'Publications', 'Contact Us'];
+interface FooterProps {
+  setActivePage: (page: string) => void;
+}
+
+export function Footer({ setActivePage }: FooterProps) {
+  const quickLinks = [
+    { label: 'Home', id: 'home' },
+    { label: 'About', id: 'about' },
+    { label: 'Meet the SLT', id: 'slt' },
+    { label: 'Achievements', id: 'achievements' },
+    { label: 'Events', id: 'events' },
+    { label: 'Publications', id: 'publications' },
+    { label: 'Contact Us', id: 'contact' }
+  ];
   
   const socialMedia = [
     { name: 'LinkedIn', url: 'https://linkedin.com' },
@@ -10,6 +22,11 @@ export function Footer() {
     { name: 'Facebook', url: 'https://facebook.com' },
     { name: 'Twitter', url: 'https://twitter.com' }
   ];
+
+  const handleLinkClick = (pageId: string) => {
+    setActivePage(pageId);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <footer className="relative bg-[#1C2C45] text-white overflow-hidden">
@@ -36,13 +53,14 @@ export function Footer() {
               <h4 className="mb-6">Quick Links</h4>
               <ul className="space-y-3">
                 {quickLinks.map((link) => (
-                  <li key={link}>
+                  <li key={link.id}>
                     <a 
-                      href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
+                      href={`#${link.id}`}
+                      onClick={() => handleLinkClick(link.id)}
                       className="text-white/70 hover:text-[#01A5A7] transition-colors inline-flex items-center gap-2 group"
                     >
                       <div className="w-1 h-1 bg-[#01A5A7] rounded-full group-hover:w-2 transition-all" />
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
