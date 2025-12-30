@@ -6,38 +6,30 @@ export function HomePage() {
   const [email, setEmail] = useState('');
 
   const announcements = [
-    { text: 'ASME Membership Drive 2025 - Register Now!', date: 'Jan 2025' },
-    { text: 'Upcoming Workshop: Advanced CAD Techniques - Feb 10, 2025', date: 'Feb 2025' },
-    { text: 'New Issue of MechInsight Magazine Released', date: 'Dec 2024' },
-    { text: 'Congratulations to Team ASME for National Competition Win!', date: 'Nov 2024' }
+    { text: 'RoboRoute: Navigate, Race, Conquer', date: 'Jan 11, 2025' },
+    { text: 'Weekend Whiz:Weekly Quiz Series - Every Sunday, 8pm', date: '' }
   ];
 
   const recentHighlights = [
     {
-      title: 'National Design Competition Winner',
-      description: 'Our team secured first place at the ASME National Student Design Competition with innovative sustainable energy solution.',
-      image: 'https://images.unsplash.com/photo-1573757056004-065ad36e2cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc2NjQ3ODI1MXww&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'RoboRoute: Navigate, Race, Conquer',
+      description: 'Excel 2025 in collaboration with ASME MEC presents RoboRoute, a thrilling dive into the world of intelligent robotics where precision, control and innovation are put to the ultimate test.',
+      image: '/images/RoboRoute_Tile.jpeg',
       date: 'December 2024'
     },
     {
-      title: 'Best Student Section Award',
-      description: 'Recognized as the Best ASME Student Section in South India for outstanding activities and member engagement.',
-      image: 'https://images.unsplash.com/photo-1596495868845-63031cb496da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzY2NDc4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Membership Growth Award',
+      description: 'Recognized for securing the Most Significant Membership Group Award under the ASME India Student Section Recognition Program.',
+      image: '/images/MembershipAward.jpeg',
       date: 'November 2024'
     },
     {
-      title: 'Industry Collaboration Success',
-      description: 'Established partnerships with leading manufacturing firms for live projects and internship opportunities.',
-      image: 'https://images.unsplash.com/photo-1715322506425-2fc19fe0fc5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwZW5naW5lZXJpbmclMjBnZWFyc3xlbnwxfHx8fDE3NjYzOTg1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      title: 'Weekend Whiz: Weekly Quiz Series',
+      description: 'Win Rs.100! Show off your skills and be the Weekend Whiz.',
+      image: '/images/Weekend_Whiz.jpeg',
       date: 'October 2024'
     }
   ];
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert(`Subscribed with email: ${email}`);
-    setEmail('');
-  };
 
   return (
     <div className="pt-32">
@@ -45,7 +37,7 @@ export function HomePage() {
       <section className="relative min-h-[80vh] flex items-center px-6 pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1562758778-e5638b5b6607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMGNvbXBldGl0aW9ufGVufDF8fHx8MTc2NjQ3ODI1MXww&ixlib=rb-4.1.0&q=80&w=1080"
+            src="/images/Core.jpeg"
             alt="ASME Event"
             className="w-full h-full object-cover"
           />
@@ -74,7 +66,12 @@ export function HomePage() {
               Empowering the next generation of mechanical engineers through innovation, 
               collaboration, and excellence at Govt. Model Engineering College.
             </p>
-
+            <a 
+  href="https://www.asme.org/join" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="inline-block" // Ensures the link wrapper fits the button size
+>
             <motion.button
               whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(131, 207, 144, 0.5)' }}
               whileTap={{ scale: 0.98 }}
@@ -83,6 +80,7 @@ export function HomePage() {
               Join ASME
               <ChevronRight className="w-5 h-5" />
             </motion.button>
+            </a>
           </motion.div>
         </div>
 
@@ -145,7 +143,6 @@ export function HomePage() {
               <Trophy className="w-4 h-4 text-[#01A5A7]" />
               <span className="text-[#01A5A7]">Recent Highlights</span>
             </div>
-            <h2 className="text-[#1C2C45]">Our Latest Achievements</h2>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -176,10 +173,6 @@ export function HomePage() {
                 <div className="p-6">
                   <h3 className="text-[#1C2C45] mb-3">{highlight.title}</h3>
                   <p className="text-[#1C2C45]/70 mb-4">{highlight.description}</p>
-                  <button className="text-[#01A5A7] hover:text-[#01A5A7]/80 transition-colors inline-flex items-center gap-2 group-hover:gap-3">
-                    Read More
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
                 </div>
 
                 <div className="absolute inset-0 bg-[#E83CF9]/0 group-hover:bg-[#E83CF9]/5 transition-all duration-300 -z-10 blur-xl pointer-events-none" />

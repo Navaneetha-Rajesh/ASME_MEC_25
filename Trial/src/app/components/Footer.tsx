@@ -12,15 +12,12 @@ export function Footer({ setActivePage }: FooterProps) {
     { label: 'Meet the SLT', id: 'slt' },
     { label: 'Achievements', id: 'achievements' },
     { label: 'Events', id: 'events' },
-    { label: 'Publications', id: 'publications' },
     { label: 'Contact Us', id: 'contact' }
   ];
   
   const socialMedia = [
     { name: 'LinkedIn', url: 'https://linkedin.com' },
-    { name: 'Instagram', url: 'https://instagram.com' },
-    { name: 'Facebook', url: 'https://facebook.com' },
-    { name: 'Twitter', url: 'https://twitter.com' }
+    { name: 'Instagram', url: 'https://instagram.com' }
   ];
 
   const handleLinkClick = (pageId: string) => {
@@ -75,8 +72,8 @@ export function Footer({ setActivePage }: FooterProps) {
                   <Mail className="w-5 h-5 text-[#01A5A7] flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-white/90 mb-1">General Inquiries:</p>
-                    <a href="mailto:asme@mec.ac.in" className="hover:text-[#01A5A7] transition-colors">
-                      asme@mec.ac.in
+                    <a href="mailto:asme.mec.mdl@gmail.com" className="hover:text-[#01A5A7] transition-colors">
+                      asme.mec.mdl@gmail.com
                     </a>
                   </div>
                 </div>
@@ -88,13 +85,6 @@ export function Footer({ setActivePage }: FooterProps) {
                     <p>Thrikkakara, Kochi</p>
                     <p>Kerala, India - 682021</p>
                   </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Phone className="w-5 h-5 text-[#01A5A7] flex-shrink-0 mt-0.5" />
-                  <a href="tel:+910484123456" className="hover:text-[#01A5A7] transition-colors">
-                    +91 (0484) 123 456
-                  </a>
                 </div>
               </div>
             </div>
@@ -170,10 +160,6 @@ export function Footer({ setActivePage }: FooterProps) {
               >
                 MEC Website
               </a>
-            </div>
-            <div className="flex gap-6">
-              <a href="#privacy" className="hover:text-[#01A5A7] transition-colors">Privacy Policy</a>
-              <a href="#terms" className="hover:text-[#01A5A7] transition-colors">Terms of Use</a>
             </div>
           </div>
         </div>

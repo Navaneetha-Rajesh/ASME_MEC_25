@@ -16,7 +16,6 @@ export function Header({ activePage, setActivePage }: HeaderProps) {
     { id: 'slt', label: 'Meet the SLT' },
     { id: 'achievements', label: 'Achievements' },
     { id: 'events', label: 'Events' },
-    { id: 'publications', label: 'Publications' },
     { id: 'contact', label: 'Contact Us' }
   ];
 

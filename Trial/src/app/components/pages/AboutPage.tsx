@@ -31,9 +31,7 @@ export function AboutPage() {
               <span className="text-[#01A5A7]">About Us</span>
             </div>
             <h1 className="text-[#1C2C45] mb-4">ASME Student Section</h1>
-            <p className="text-[#1C2C45]/70 max-w-3xl mx-auto text-lg">
-              Building a community of innovative mechanical engineers since 1998
-            </p>
+            
           </motion.div>
         </div>
       </section>
@@ -52,7 +50,7 @@ export function AboutPage() {
             >
               <div className="relative rounded-3xl overflow-hidden border border-[#01A5A7]/20 bg-white/60 backdrop-blur-sm">
                 <img
-                  src="https://images.unsplash.com/photo-1596495868845-63031cb496da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzY2NDc4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                  src="/images/AboutUs.jpeg"
                   alt="ASME Student Section Certificate"
                   className="w-full h-[500px] object-cover"
                 />
@@ -73,25 +71,19 @@ export function AboutPage() {
               <h2 className="text-[#1C2C45] mb-6">About Our Student Section</h2>
               <div className="space-y-4 text-[#1C2C45]/70">
                 <p>
-                  The ASME Student Section at Govt. Model Engineering College was established in 
-                  <span className="text-[#01A5A7]"> March 1998</span>, marking the beginning of a legacy 
-                  of technical excellence and innovation.
-                </p>
-                <p>
-                  Our section serves as a vibrant platform for mechanical engineering students to explore 
-                  cutting-edge technologies, develop professional skills, and network with industry leaders. 
-                  We organize workshops, technical competitions, industry visits, and seminars that bridge 
-                  the gap between academic learning and real-world engineering challenges.
-                </p>
-                <p>
-                  With over 500 active members, we foster a collaborative environment where students engage 
-                  in hands-on projects, participate in national-level competitions, and contribute to the 
-                  advancement of mechanical engineering through research and innovation.
-                </p>
-                <p>
-                  As part of the global ASME network, our section provides members with access to world-class 
-                  resources, publications, and opportunities to connect with the international engineering community.
-                </p>
+                 The ASME Student Section at Government Model Engineering College (MEC) was established on 
+                 2019 with the aim of nurturing technical excellence and encouraging professional growth 
+                 among mechanical engineering students. </p>
+
+                 <p>Our student section acts as a strong link between academic learning and real-world 
+                  industry practices. It provides students with opportunities to explore advanced technical 
+                  knowledge, take part in national-level competitions, and build essential leadership and 
+                  teamwork skills that support long-term career development. </p>
+
+                <p>We are dedicated to promoting the art, science, and practice of engineering and allied 
+                  sciences. Through workshops, seminars, technical talks, industrial interactions, and 
+                  hands-on projects, ASME MEC equips its members with the skills and exposure required 
+                  to succeed in mechanical engineering and related domains.</p>
               </div>
 
             </motion.div>
@@ -170,28 +162,46 @@ export function AboutPage() {
                   </div>
                   <h3 className="text-white">Primary Goal</h3>
                 </div>
+                <div className="flex items-start gap-3 flex-col">
+                <p className="space-y-3 text-white/90">To provide an interdisciplinary platform for students across multiple engineering disciplines at 
+                Government Model Engineering College (MEC), enabling collaboration, innovation, and integrated learning 
+                to solve complex real-world engineering problems. </p> 
+
+                <p className="space-y-3 text-white/90"> Our key objectives include:
+
+                </p>
+
                 <ul className="space-y-3 text-white/90">
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Foster technical excellence and innovation among mechanical engineering students</span>
+                    <span>Promoting interdisciplinary collaboration across mechanical, electrical, electronics, computer science, and allied engineering domains</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Provide hands-on learning experiences through workshops and projects</span>
+                    <span>Collaborating with other technical societies and academic departments within MEC to deliver impactful technical programs and events</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Build strong industry-academia connections for career development</span>
+                    <span>Encouraging innovative problem-solving by integrating concepts from multiple engineering disciplines</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Promote research and development in cutting-edge engineering fields</span>
+                    <span>Fostering technical excellence, creativity, and research-oriented thinking</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
-                    <span>Create a collaborative platform for knowledge sharing and networking</span>
+                    <span>Strengthening industry–academia interaction and real-world exposure</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                    <span>Developing leadership, teamwork, and effective communication skills</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <div className="w-1.5 h-1.5 bg-white rounded-full mt-2 flex-shrink-0" />
+                    <span>Promoting lifelong learning and professional ethics</span>
                   </li>
                 </ul>
+              </div>
               </div>
             </motion.div>
 
@@ -210,28 +220,34 @@ export function AboutPage() {
                   </div>
                   <h3 className="text-[#1C2C45]">Future Roadmap</h3>
                 </div>
+
+
+                <div className="flex items-start gap-3 flex-col">
+
+                <p className="space-y-3 text-[#1C2C45]/70">The long-term vision of ASME MEC is to create an ecosystem that nurtures interdisciplinary innovation and prepares 
+                  students to address complex engineering challenges. </p>
+
+                <p className="space-y-3 text-[#1C2C45]/70">Planned initiatives include:</p>
+
                 <ul className="space-y-3 text-[#1C2C45]/70">
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#01A5A7] rounded-full mt-2 flex-shrink-0" />
-                    <span>Expand innovation lab with advanced manufacturing equipment</span>
+                    <span>Launching interdisciplinary student-led innovation and research projects</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#01A5A7] rounded-full mt-2 flex-shrink-0" />
-                    <span>Launch international collaboration programs with global ASME chapters</span>
+                    <span>Establishing structured mentorship programs involving alumni and industry professionals</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#01A5A7] rounded-full mt-2 flex-shrink-0" />
-                    <span>Develop specialized training programs in emerging technologies</span>
+                    <span>Organizing national-level interdisciplinary workshops, conferences, and symposiums</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <div className="w-1.5 h-1.5 bg-[#01A5A7] rounded-full mt-2 flex-shrink-0" />
-                    <span>Increase industry partnerships for internship and placement opportunities</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-[#01A5A7] rounded-full mt-2 flex-shrink-0" />
-                    <span>Host national-level technical symposiums and competitions</span>
+                    <span>Expanding outreach programs that apply engineering solutions to real-world and societal challenges</span>
                   </li>
                 </ul>
+                </div>
                 <div className="absolute inset-0 bg-[#E83CF9]/0 group-hover:bg-[#E83CF9]/5 transition-all duration-300 -z-10 blur-xl rounded-3xl" />
               </div>
             </motion.div>

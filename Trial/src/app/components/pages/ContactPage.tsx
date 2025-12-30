@@ -5,27 +5,9 @@ export function ContactPage() {
   const contactInfo = [
     {
       category: 'General Inquiries',
-      email: 'info@asme-mec.org',
+      email: 'asme.mec.mdl@gmail.com',
       icon: MessageCircle,
       description: 'For general questions about ASME MEC Student Section'
-    },
-    {
-      category: 'Membership Queries',
-      email: 'membership@asme-mec.org',
-      icon: Users,
-      description: 'Questions about joining ASME or membership benefits'
-    },
-    {
-      category: 'Event Registrations',
-      email: 'events@asme-mec.org',
-      icon: Briefcase,
-      description: 'Register for workshops, seminars, and competitions'
-    },
-    {
-      category: 'Collaborations & Sponsorships',
-      email: 'partnerships@asme-mec.org',
-      icon: ExternalLink,
-      description: 'Industry partnerships and sponsorship opportunities'
     }
   ];
 
@@ -39,7 +21,7 @@ export function ContactPage() {
     {
       name: 'Instagram',
       handle: '@asme_mec',
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/asme_mec?igsh=aHluZ29yb3N6ZGJ5',
       color: 'bg-gradient-to-r from-[#833AB4] via-[#FD1D1D] to-[#F77737]'
     }
   ];
@@ -89,10 +71,36 @@ export function ContactPage() {
         </div>
       </section>
 
+
+      {/* Social Media Section */}
+      <section className="px-6 mb-24">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-[#1C2C45] font-bold mb-8">Follow Our Journey</h2>
+          <div className="flex flex-wrap justify-center gap-6">
+            {socialMedia.map((social, index) => (
+              <motion.a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -5 }}
+                className="w-full sm:w-[250px] bg-white/60 p-6 rounded-3xl border border-[#01A5A7]/10 shadow-sm flex flex-col items-center"
+              >
+                <div className={`w-14 h-14 ${social.color} rounded-2xl mb-4 flex items-center justify-center text-white text-xl font-bold`}>
+                  {social.name[0]}
+                </div>
+                <h4 className="text-[#1C2C45] font-bold">{social.name}</h4>
+                <p className="text-[#1C2C45]/50 text-sm">{social.handle}</p>
+              </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Contact Information Cards */}
       <section className="px-6 mb-24">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
             {contactInfo.map((contact, index) => {
               const Icon = contact.icon;
               return (
@@ -123,30 +131,6 @@ export function ContactPage() {
         </div>
       </section>
 
-      {/* Social Media Section */}
-      <section className="px-6 mb-24">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-[#1C2C45] font-bold mb-8">Follow Our Journey</h2>
-          <div className="flex flex-wrap justify-center gap-6">
-            {socialMedia.map((social, index) => (
-              <motion.a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ y: -5 }}
-                className="w-full sm:w-[250px] bg-white/60 p-6 rounded-3xl border border-[#01A5A7]/10 shadow-sm flex flex-col items-center"
-              >
-                <div className={`w-14 h-14 ${social.color} rounded-2xl mb-4 flex items-center justify-center text-white text-xl font-bold`}>
-                  {social.name[0]}
-                </div>
-                <h4 className="text-[#1C2C45] font-bold">{social.name}</h4>
-                <p className="text-[#1C2C45]/50 text-sm">{social.handle}</p>
-              </motion.a>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Interactive Map Section */}
       <section className="px-6 mb-24">
@@ -171,8 +155,8 @@ export function ContactPage() {
                 </div>
               </div>
               <div className="mt-8 pt-8 border-t border-white/10 space-y-4">
-                <a href="mailto:asme@mec.ac.in" className="flex items-center gap-3 text-white/80 hover:text-[#01A5A7] transition-colors">
-                  <Mail className="w-5 h-5" /> asme@mec.ac.in
+                <a href="mailto:asme.mec.mdl@gmail.com" className="flex items-center gap-3 text-white/80 hover:text-[#01A5A7] transition-colors">
+                  <Mail className="w-5 h-5" /> asme.mec.mdl@gmail.com
                 </a>
               </div>
             </motion.div>

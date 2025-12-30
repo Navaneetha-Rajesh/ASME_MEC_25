@@ -4,60 +4,11 @@ import { Trophy, Award, Medal, Star } from 'lucide-react';
 export function AchievementsPage() {
   const achievements = [
     {
-      year: '2024',
-      title: 'National Design Competition - First Place',
-      description: 'Team ASME MEC secured first place at the ASME National Student Design Competition with an innovative sustainable energy solution competing against 50+ teams nationwide.',
-      category: 'Competition',
-      image: 'https://images.unsplash.com/photo-1573757056004-065ad36e2cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc2NjQ3ODI1MXww&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2024',
-      title: 'Best Student Section Award - South India',
-      description: 'Recognized as the Best ASME Student Section in South India for outstanding member engagement, technical activities, and community outreach programs.',
-      category: 'Recognition',
-      image: 'https://images.unsplash.com/photo-1596495868845-63031cb496da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzY2NDc4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2024',
-      title: 'Excellence in Community Outreach',
-      description: 'Awarded for exceptional community engagement through STEM workshops for underprivileged students and sustainability awareness campaigns.',
+      year: '2025',
+      title: 'Most Significant Membership Growth Award',
+      description: 'Recognized for securing the Most Significant Membership Growth Award under the ASME India Student Section Recognition Program.',
       category: 'Award',
-      image: 'https://images.unsplash.com/photo-1562758778-e5638b5b6607?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2JvdGljcyUyMGNvbXBldGl0aW9ufGVufDF8fHx8MTc2NjQ3ODI1MXww&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2023',
-      title: 'Robotics Championship Winners',
-      description: 'First place at the Inter-College Robotics Championship with an autonomous navigation system demonstrating advanced sensor integration.',
-      category: 'Competition',
-      image: 'https://images.unsplash.com/photo-1715322506425-2fc19fe0fc5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwZW5naW5lZXJpbmclMjBnZWFyc3xlbnwxfHx8fDE3NjYzOTg1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2023',
-      title: 'Outstanding Technical Publication',
-      description: 'MechInsight Magazine recognized as the Best Student Publication for high-quality technical content and innovative design.',
-      category: 'Recognition',
-      image: 'https://images.unsplash.com/photo-1762146828422-50a8bd416d3c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMGJsdWVwcmludCUyMGRlc2lnbnxlbnwxfHx8fDE3NjY0NzgyNTF8MA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2023',
-      title: 'Innovation Challenge - Runner Up',
-      description: 'Second place at the National Innovation Challenge with a novel energy-efficient cooling system design for industrial applications.',
-      category: 'Competition',
-      image: 'https://images.unsplash.com/photo-1596495868845-63031cb496da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlbmdpbmVlcmluZyUyMHN0dWRlbnRzJTIwd29ya3Nob3B8ZW58MXx8fHwxNzY2NDc4MjUwfDA&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2022',
-      title: 'Student Leadership Excellence Award',
-      description: 'Recognition for outstanding student leadership and organizational management in conducting large-scale technical events.',
-      category: 'Award',
-      image: 'https://images.unsplash.com/photo-1573757056004-065ad36e2cf4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjBpbm5vdmF0aW9ufGVufDF8fHx8MTc2NjQ3ODI1MXww&ixlib=rb-4.1.0&q=80&w=1080'
-    },
-    {
-      year: '2022',
-      title: 'Best Technical Workshop Series',
-      description: 'Awarded for organizing comprehensive workshop series covering CAD, FEA, and manufacturing technologies with industry collaboration.',
-      category: 'Recognition',
-      image: 'https://images.unsplash.com/photo-1715322506425-2fc19fe0fc5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWNoYW5pY2FsJTIwZW5naW5lZXJpbmclMjBnZWFyc3xlbnwxfHx8fDE3NjYzOTg1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080'
+      image: '/images/Membership.jpeg'
     }
   ];
 
@@ -87,7 +38,6 @@ export function AchievementsPage() {
               <Trophy className="w-4 h-4 text-[#01A5A7]" />
               <span className="text-[#01A5A7]">Achievements</span>
             </div>
-            <h1 className="text-[#1C2C45] mb-4">Our Achievements & Awards</h1>
             <p className="text-[#1C2C45]/70 max-w-3xl mx-auto text-lg">
               Celebrating excellence, innovation, and the remarkable accomplishments of our student section
             </p>
