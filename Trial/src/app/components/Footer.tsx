@@ -16,8 +16,8 @@ export function Footer({ setActivePage }: FooterProps) {
   ];
   
   const socialMedia = [
-    { name: 'LinkedIn', url: 'https://linkedin.com' },
-    { name: 'Instagram', url: 'https://instagram.com' }
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/asme-mec/' },
+    { name: 'Instagram', url: 'https://www.instagram.com/asme_mec?igsh=aHluZ29yb3N6ZGJ5' }
   ];
 
   const handleLinkClick = (pageId: string) => {

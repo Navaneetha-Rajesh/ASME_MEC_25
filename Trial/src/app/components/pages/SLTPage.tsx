@@ -4,7 +4,7 @@ import { Mail, Linkedin, Users } from 'lucide-react';
 export function SLTPage() {
   const hod = {
     name: 'Varghese M P',
-    title: 'Assistant Proffesor, Department of Mechanical Engineering',
+    title: 'Assistant Professor, Dept. of Mechanical Engineering',
     image: '/images/Team/Varghese.jpeg',
     message: `"It gives me immense pleasure to see our ASME Student Section flourishing under 
     the dedicated leadership of our students. The section has consistently demonstrated 
