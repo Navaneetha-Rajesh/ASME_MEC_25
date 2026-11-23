@@ -5,7 +5,7 @@ export function SLTPage() {
   const hod = {
     name: 'Varghese M P',
     title: 'Assistant Professor, Dept. of Mechanical Engineering',
-    image: '/images/Team/Varghese.jpeg',
+    image: '/images/Team/Varghese.jpg',
     message: `"It gives me immense pleasure to see our ASME Student Section flourishing under 
     the dedicated leadership of our students. The section has consistently demonstrated 
     excellence in promoting technical knowledge, fostering innovation, and building strong 
@@ -16,69 +16,75 @@ export function SLTPage() {
 
   const sltMembers = [
     {
-      name: 'Meenakshi V J',
-      designation: 'Chairperson',
-      image: '/images/Team/Meenakshi.jpg'
-    },
-    {
-      name: 'Vidhuganga N P',
-      designation: 'Vice-Chairperson',
-      image: '/images/Team/Vidhuganga.png'
-    },
-    {
-      name: 'Ishan',
-      designation: 'General Secretary',
-      image: '/images/Team/Ishan.jpeg'
-    },
-    {
       name: 'Jithendranath A M',
-      designation: 'Joint Secretary',
-      image: '/images/Team/Jithendranath.webp'
+      designation: 'Chairperson',
+      image: '/images/Team/Jithendranath.jpg'
+    },
+    {
+      name: 'Niya Sunit',
+      designation: 'Vice-Chairperson',
+      image: '/images/Team/Niya.jpg'
     },
     {
       name: 'Anantesh S Pai',
+      designation: 'Secretary',
+      image: '/images/Team/Anantesh.jpg'
+    },
+    {
+      name: 'Fathima K K',
+      designation: 'Joint Secretary',
+      image: '/images/Team/Fathima.jpg'
+    },
+    
+    {
+      name: 'Sana P M',
+      designation: 'Content Lead',
+      image: '/images/Team/Sana.jpg'
+    },
+    {
+      name: 'Meghashree Girish',
       designation: 'Treasurer',
-      image: '/images/Team/Anantesh.jpeg'
-    },
-    {
-      name: 'Akhil Raju',
-      designation: 'Marketing Head',
-      image: '/images/Team/Akhil.jpg'
-    },
-    {
-      name: 'Jothsna Mariyam George',
-      designation: 'Marketing Subhead',
-      image: '/images/Team/Jothsna.jpg'
-    },
-    {
-      name: 'Athul Krishnan P',
-      designation: 'Event Head',
-      image: '/images/Team/Athul.jpg'
+      image: '/images/Team/Meghashree.jpg'
     },
     {
       name: 'Janaki S',
-      designation: 'Event Subhead',
+      designation: 'Marketing Lead',
       image: '/images/Team/Janaki.jpg'
     },
     {
-      name: 'Sacheth P R',
-      designation: 'Design Head',
-      image: '/images/Team/Sacheth.jpg'
+      name: 'Ganga Satheesh',
+      designation: 'Marketing Co-Lead',
+      image: '/images/Team/Ganga.png'
     },
     {
-      name: 'B Brahmanarayanan',
-      designation: 'Design Subhead',
-      image: '/images/Team/Brahmanarayanan.jpg',
+      name: 'Aadi Narayan',
+      designation: 'Events Lead',
+      image: '/images/Team/Aadi.jpg'
     },
     {
-      name: 'Hrishikesh C R',
+      name: 'Ejo James',
+      designation: 'Event Co-Lead',
+      image: '/images/Team/Ejo.png',
+    },
+    {
+      name: 'Joseph Augustine Binu',
+      designation: 'Design Lead',
+      image: '/images/Team/Joseph.jpeg'
+    },
+    {
+      name: 'Rose Maria Mathews',
+      designation: 'Design Co-Lead',
+      image: '/images/Team/Rose.jpg'
+    },
+    {
+      name: 'Adithi Naick',
       designation: 'Media Head',
-      image: '/images/Team/Hrishikesh.jpg'
+      image: '/images/Team/Adithi.jpg'
     },
     {
-      name: 'Chandra S Nair',
-      designation: 'Publicity Head',
-      image: '/images/Team/Chandra.jpeg'
+      name: 'Jewel Rose Shajan',
+      designation: 'Creatives Head',
+      image: '/images/Team/Jewel.jpg'
     },
     {
       name: 'Navaneetha Rajesh',
@@ -86,14 +92,9 @@ export function SLTPage() {
       image: '/images/Team/Navaneetha.jpg'
     },
     {
-      name: 'Meghashree Girish',
-      designation: 'Content Head',
-      image: '/images/Team/Meghashree.jpg'
-    },
-    {
-      name: 'Niya Sunil',
-      designation: 'Creatives Head',
-      image: '/images/Team/Niya.jpeg'
+      name: 'Amy Ann Jims',
+      designation: 'Tech Web Sub-Head',
+      image: '/images/Team/Amy.jpg'
     },
     {
       name: 'Anjana Anoop',
@@ -101,24 +102,29 @@ export function SLTPage() {
       image: '/images/Team/Anjana.jpg'
     },
     {
-      name: 'Hanna Shibu Mathew',
+      name: 'Aein Shaji',
+      designation: 'Documentation Sub-Head',
+      image: '/images/Team/Aein.jpg'
+    },
+    {
+      name: 'Niranjana Jayaprakash',
+      designation: 'Second Year Rep',
+      image: '/images/Team/Niranjana.jpg'
+    },
+    {
+      name: 'Ishal Joseph',
+      designation: 'Second Year Rep',
+      image: '/images/Team/Ishal.png'
+    },
+    {
+      name: 'Gautham Chandra E A',
       designation: 'Link Rep',
-      image: '/images/Team/Hannah.jpg'
+      image: '/images/Team/Gautham.jpg'
     },
     {
-      name: 'Bharath Krishna',
+      name: 'Krishna D Nair',
       designation: 'Link Rep',
-      image: '/images/Team/Bharath.jpg'
-    },
-    {
-      name: 'Fathima K K',
-      designation: 'Second Year Reps',
-      image: '/images/Team/Fathima.jpg'
-    },
-    {
-      name: 'Jewel Rose Shajan',
-      designation: 'Second Year Reps',
-      image: '/images/Team/Jewel.jpeg'
+      image: '/images/Team/Krishna.jpg'
     }
   ];
 
@@ -195,7 +201,7 @@ export function SLTPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-[#1C2C45] mb-4">Student Leadership Team 2024-25</h2>
+            <h2 className="text-[#1C2C45] mb-4">Student Leadership Team 2026-27</h2>
             <p className="text-[#1C2C45]/70">
               Meet the dedicated team members leading our initiatives
             </p>
